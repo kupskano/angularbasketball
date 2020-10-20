@@ -1,0 +1,7 @@
+{
+  "name": "AngularBasketball",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

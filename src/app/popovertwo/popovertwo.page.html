@@ -1,0 +1,19 @@
+
+     
+      <div >
+        <ion-grid>
+          <ion-row>
+            <ion-col size="4" *ngFor="let application of applications">
+              <ion-card (click)="presentAlertConfirm(application)">
+                <ion-img src="{{application.urlimage}}"></ion-img>
+                <!-- {{application.title.substring(0,7).toUpperCase()}} -->
+                <div class="ion-text-center">
+                  <ion-label>{{application.title}}</ion-label>
+                </div>
+            </ion-card>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+        
+      </div>
+   

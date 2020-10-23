@@ -11,6 +11,14 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'popovertwo',
+    loadChildren: () => import('./popovertwo/popovertwo.module').then( m => m.PopovertwoPageModule)
+  },
+  {
+    path: 'funda-details',
+    loadChildren: () => import('./funda-details/funda-details.module').then( m => m.FundaDetailsPageModule)
+  },
 ];
 
 @NgModule({
